@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawson | Lawson Indonesia</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/output.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+        <div class=" container mx-auto lg:relative flex flex-col lg:flex-row
+        lg:justify-between gap-y-4 lg:gap-y-0">
+            <!-- logo -->
+            <div class="flex justify-center lg:justify-normal">
+                <a href="">
+                    <img src="../assets/img/header/logo.svg" alt="">
+                </a>
+            </div>
+
+
+                <!-- Nav Mobile -->
+                <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+                    <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+                    top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg"> 
+                        <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                    </div>
+
+                    <!-- logo, list, form -->
+                    <div class="px-12 flex flex-col gap-y-12 h-full">
+                        <!-- Logo -->
+                        <a href="">
+                            <img src="../assets/img/header/logo.svg" alt="">
+                        </a>
+                        <!-- List -->
+                        <ul class="flex flex-col gap-y-5">
+                            
+                            <li>
+                                <a href="#" class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#aboutUs-section" class="text-secondary hover:text-accent transition-all duration-300">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-secondary hover:text-accent transition-all duration-300">History</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-secondary hover:text-accent transition-all duration-300">Menu</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- Form -->
+                        <form class="relative flex gap-x [10px]">
+                            <label for="">
+                                <i class="ri-search-line text-2xl text-accent"></i>
+                            </label>
+                            <input type="text" id="nav-search-input"
+                            placeholder="Search..." class="outline-none w-[160px] border-b-2 
+                            focus:border-accent placeholder:italic">
+                        </form>
+                    </div>
+                </nav>
+
+                     <!-- desktop nav -->
+                     <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1
+                     h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                        <!-- List -->
+                        <ul class="flex gap-x-4">
+                            <li>
+                                <a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">History</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Menu</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- Form -->
+                        <form class="relative flex gap-y-[10px]">
+                            <label for="search-input" class="flex justify-center items-center group">
+                                <i class="ri-search-line text-accent"></i>
+                            </label>
+                            <input type="text" id="search-input" placeholder="Search..."
+                            class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus focus:border-accent 
+                            placeholder:italic placeholder:text-base transition-all duration-500">
+                        </form>
+                    </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+        <div class="container mx-auto h-full">
+            <!-- text & img -->
+            <div class="flex items-center">
+                <!-- text -->
+                <div class="hero__text xl:w-[100%] text-center xl:text-center">
+
+
+                    <!-- title -->
+                    <h1 class="p-40 h1 mb-6 mt-10 text-center text-[#2A69E7]">Lawson</h1>
+
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats section">
+        <div class="container mx-auto">
+            <!-- wrapper -->
+            <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+                <!-- items -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center"> 
+                <div class="text-4xl xl:text-[64px] font-semibold text-[#0D7CBF] xl:mb-4">+500</div>
+                <div>Outlet</div>
+            </div>
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center"> 
+                <div class="text-4xl xl:text-[64px] font-semibold text-[#0D7CBF] xl:mb-4">+600</div>
+                <div>Fund</div>
+            </div>
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center"> 
+                <div class="text-4xl xl:text-[64px] font-semibold text-[#0D7CBF] xl:mb-4">+53</div>
+                <div>Menu</div>
+            </div>
+                <div class="stats__item flex-1 flex flex-col items-center"> 
+                <div class="text-4xl xl:text-[64px] font-semibold text-[#0D7CBF] xl:mb-4">+23</div>
+                <div>Years experience</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section>
+        <div class="container mx-auto">
+    <div class="bg-blue-500  h-auto rounded-[20px] px-6 py-8 xl:pt-[70px] flex items-center
+        xl:items-start my-10 ">
+            <div class="container mx-auto">
+                <!-- text -->
+                <div class="services__top flex items-center flex-col xl:flex-row">
+                <h2 class="h2 text-white flex-1 mb-4 text-center xl:text-left">What Make Lawson's Model Different?</h2>
+                <p class="text-white text-[18px] flex-1 text-center xl:text-left max-w-2xl"><span class="bold">We respond to social issues by honoring our three promises under the New Lawson Declaration while striving to become “every customer’s No. 1 recommended brand.”</span>
+                    </p>  
+          </div>
+          
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- About us -->
+    <section id="aboutUs-section" class=" mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+            <div class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]">
+                <div class="flex-1 m-[2rem] order-2 xl:order-none max-w-xl xl:max-w-[410px] 
+                flex flex-col items-center xl:items-start gap-8">
+                    <p class="font-semibold ">About Us</p>
+                    <h2 class="h2">lAWSON</h2>
+                    <p>Lawson is a convenience store concept that sells Japanese-flavored ready-to-eat food & drinks 
+                        and provides a comfortable place to eat & drink. 
+                        Lawson is growing rapidly in Japan and expanding to several countries including Indonesia.
+                    </p>
+                      
+
+                    <!-- button about -->
+                    <div>
+                        <button class="btn btn-accent p-5 xl:p-2">Read More
+                            <i class="ri-arrow-right-line text-white"></i>
+                        </button>
+                    </div>
+              
+                    </div>
+
+                <div class="about__img order-1 xl:order-none max-w-[453px] mx-auto
+                xl:max-w-none xl:mx-0 rounded-xl">
+                    <img src="/assets/img/blog/lawson-login.png" alt="" />
+                </div> 
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Menu -->
+    <section class="container mx-auto"> 
+            
+            <div class="flex items-center justify-between">
+
+            <div class="flex justify-center items-center  min-h-screen">
+                <div class="bg-white shadow-md hover:scale-105 duration-300">
+                    <a href="">
+                        <img class="h-80 w-72 object-cover" src="/assets/img/menu/menuu-1.png" alt="">
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 text-sm">
+                            Brand
+                        </span>
+                        <p class="text-lg font-bold block truncate capitalize">Tteokbboki And CheeseBokki</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold my-3">Rp. 32.000</p>
+                            <div class="ml-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center min-h-screen">
+                <div class="bg-white shadow-md hover:scale-105 duration-300">
+                    <a href="">
+                        <img class="h-80 w-72 object-cover" src="/assets/img/menu/menuu-2.png" alt="">
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 text-sm">
+                            Udon
+                        </span>
+                        <p class="text-lg font-bold block truncate capitalize">Oden Udon</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold my-3">Rp. 30.000</p>
+                            <div class="ml-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center min-h-screen">
+                <div class="bg-white shadow-md hover:scale-105 duration-300">
+                    <a href="">
+                        <img class="h-80 w-72 object-cover" src="/assets/img/menu/menuu-3.png" alt="">
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 text-sm">
+                            Odeng
+                        </span>
+                        <p class="text-lg font-bold block truncate capitalize">Odeng</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold my-3">Rp. 20.000</p>
+                            <div class="ml-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center min-h-screen">
+                <div class="bg-white shadow-md hover:scale-105 duration-300">
+                    <a href="">
+                        <img class="h-80 w-72 object-cover" src="/assets/img/menu/menu-4.png" alt="">
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 text-sm">
+                            Noodle
+                        </span>
+                        <p class="text-lg font-bold block truncate capitalize">jjajangmyeon</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold my-3">Rp. 28.000</p>
+                            <div class="ml-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+<!-- Faq -->
+<section class="faq">
+    <div class="container mx-auto">
+        <h2 class="faq__title h2 text-center mb-[50px]">We've General Answers</h2>
+        <!-- Item wrapper -->
+        <div class="max-w-5xl mx-auto">
+            <!-- Item 1-->
+            <div class="faq_item px-[30px] pt-7 border-b cursor-pointer select-none">
+                <!-- Title and Icon -->
+                <div class="flex items-center justify-between mb- [10px]">
+                    <!-- Title -->
+                    <h4 class="h4">Why to believe with insove sit amet?</h4>
+                    <!-- Icon -->
+                    <div class="faq__btn text-accent">
+                        <i class="ri-add-line text-2xl"></i>
+                    </div>
+                </div>
+                <!-- Answer Text -->
+                <div class="faq_answer h-0 overflow-hidden">
+                    <p class="font-light ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet pariatur voluptate ipsam odit omnis.</p>
+
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="faq_item px-[30px] pt-7 border-b cursor-pointer select-none">
+                <!-- Title and Icon -->
+                <div class="flex items-center justify-between mb- [10px]">
+                    <!-- Title -->
+                    <h4 class="h4">Why to believe with insove sit amet?</h4>
+                    <!-- Icon -->
+                    <div class="faq__btn text-accent">
+                        <i class="ri-add-line text-2xl"></i>
+                    </div>
+                </div>
+                <!-- Answer Text 3 -->
+                <div class="faq_answer h-0 overflow-hidden">
+                    <p class="font-light ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet pariatur voluptate ipsam odit omnis.</p>
+
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="faq_item px-[30px] pt-7 border-b cursor-pointer select-none">
+                <!-- Title and Icon -->
+                <div class="flex items-center justify-between mb- [10px]">
+                    <!-- Title -->
+                    <h4 class="h4">Why to believe with insove sit amet?</h4>
+                    <!-- Icon -->
+                    <div class="faq__btn text-accent">
+                        <i class="ri-add-line text-2xl"></i>
+                    </div>
+                </div>
+                <!-- Answer Text -->
+                <div class="faq_answer h-0 overflow-hidden">
+                    <p class="font-light ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet pariatur voluptate ipsam odit omnis.</p>
+
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="faq_item px-[30px] pt-7 border-b cursor-pointer select-none">
+                <!-- Title and Icon -->
+                <div class="flex items-center justify-between mb- [10px]">
+                    <!-- Title -->
+                    <h4 class="h4">Why to believe with insove sit amet?</h4>
+                    <!-- Icon -->
+                    <div class="faq__btn text-accent">
+                        <i class="ri-add-line text-2xl"></i>
+                    </div>
+                </div>
+                <!-- Answer Text -->
+                <div class="faq_answer h-0 overflow-hidden">
+                    <p class="font-light ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet pariatur voluptate ipsam odit omnis.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Blog -->
+<div class="container mx-auto mt-[15%]">
+    <h2 class="blog__title h2 mb-[50px] text-center xl:text-center">Our Recent Post</h2>
+
+    <!-- Blog post -->
+    <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center
+    xl:justify-between mb-[50px]">
+        
+        <!-- post 1 -->
+        <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden
+        cursor-pointer group">
+            <!-- img -->
+            <div class="relative overflow-hidden">
+                <!-- membuat gambar menjadi zoom juga dengan class group -->
+                <img class="group-hover:scale-110 transition-all duration-500" src="../assets/img/blog/lawsonn on june 1975 1.png" alt="">
+                <!-- badge -->
+                <!-- setelah di relative alu di absolute juga buttom juga left 0 biar didalam img -->
+                <div class="bg-accent-tertiary absolute bottom-0 left-0
+                text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]">
+                    History
+                </div>
+            </div>
+            <!-- text -->
+            <div class="px-5 py-6">
+                <!-- date -->
+                <div class="mb-4">Jan 2, 2023</div>
+                <!-- title -->
+                <h4 class="h4 mb-[10px]">History Lawson</h4>
+                <!-- desc -->
+                <p class="font-light">
+                    It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a
+                    condition that’s certainly true... 
+                    <a href="" class="italic underline text-[#4C5354]">Read more</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- post 2 -->
+        <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden
+        cursor-pointer group">
+            <!-- img -->
+            <div class="relative overflow-hidden">
+                <!-- membuat gambar menjadi zoom juga dengan class group -->
+                <img class="group-hover:scale-110 transition-all duration-500" src="../assets/img/blog/best-menu.png" alt="">
+                <!-- badge -->
+                <!-- setelah di relative alu di absolute juga buttom juga left 0 biar didalam img -->
+                <div class="bg-accent-tertiary absolute bottom-0 left-0
+                text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]">
+                    History
+                </div>
+            </div>
+            <!-- text -->
+            <div class="px-5 py-6">
+                <!-- date -->
+                <div class="mb-4">Jan 2, 2023</div>
+                <!-- title -->
+                <h4 class="h4 mb-[10px]">History Lawson</h4>
+                <!-- desc -->
+                <p class="font-light">
+                    It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a
+                    condition that’s certainly true... 
+                    <a href="" class="italic underline text-[#4C5354]">Read more</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- post 3 -->
+        <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden
+        cursor-pointer group">
+            <!-- img -->
+            <div class="relative overflow-hidden">
+                <!-- membuat gambar menjadi zoom juga dengan class group -->
+                <img class="group-hover:scale-110 transition-all duration-500" src="../assets/img/blog/recent-post-lawson1.png" alt="">
+                <!-- badge -->
+                <!-- setelah di relative alu di absolute juga buttom juga left 0 biar didalam img -->
+                <div class="bg-accent-tertiary absolute bottom-0 left-0
+                text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]">
+                    History
+                </div>
+            </div>
+            <!-- text -->
+            <div class="px-5 py-6">
+                <!-- date -->
+                <div class="mb-4">Jan 2, 2023</div>
+                <!-- title -->
+                <h4 class="h4 mb-[10px]">History Lawson</h4>
+                <!-- desc -->
+                <p class="font-light">
+                    It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a
+                    condition that’s certainly true... 
+                    <a href="" class="italic underline text-[#4C5354]">Read more</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+   <!-- Appointment -->
+   <section class="appointment section">
+    <div class="container mx-auto">
+        <!-- tittle -->
+        <h2 class="appointment__tittle h2 text-center xl:text-left xl:mb-[50px] mb-5  ">
+            Book Appointment or call:
+            <span class="text-accent-tertiary">(+487) 384 9452
+            </span>
+        </h2>
+        <!-- form -->
+        <form class="appointment__form flex flex-col gap-y-5"> 
+            <!-- select wrapper -->
+            <div class="flex flex-col xl:flex-row gap-5">
+                <!-- select 1 -->
+                <div class="select relative flex items-center">
+                    <!-- icon -->
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+                    <!-- select -->
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">FOOD</option>
+                        <option value="2">DRINK</option>
+                        <option value="3">DESSERT</option>
+                    </select>
+                </div>
+                <div class="select relative flex items-center">
+                    <!-- icon -->
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+                    <!-- select -->
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">Tteokbboki</option>
+                        <option value="2">Oden</option>
+                        <option value="3">Udon</option>
+                        <option value="4">jjajangmyeon</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Input wrapper -->
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="text" class="input" placeholder="Full Name">
+                <input type="text" class="input" placeholder="Phone Number">
+            </div>
+
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="date" class="input" placeholder="Date Order">
+                <input type="text" class="input" placeholder="Request">
+            </div>
+
+            <!-- button -->
+            <button class="btn btn-lg btn-accent self-start mt-5" type="submit">Order Now</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+ <!-- footer -->
+    <footer class="p-[100px] bg-white" id="footer">
+        <div class="flex justify-between gap-[50px]">
+            <div class="address">
+                <img class="logo mb-[21px] h-[70px] w-auto rounded-md" src="../assets/img/logo/lawson-logo.png"  alt="" >
+                <p class="text-[#5C6574] text-[16px] w-[408px] h-[90px]">Lawson is a convenience store concept that sells Japanese-flavored ready-to-eat food & drinks 
+                    and provides a comfortable place to eat & drink. 
+                    Lawson is growing rapidly in Japan and expanding to several countries including Indonesia. 
+                  <br><br>
+
+              
+            </div>
+            <div class="flex flex-col">
+                <p class="text-[#3a434d] font-[20px] uppercase" style="  letter-spacing: 3px;">Navigation</p>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">History</a>
+                <a href="#">Menu</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-[#3a434d] font-[20px] uppercase" style="  letter-spacing: 3px;">Variant</p>
+                <a href="#">Odeng</a>
+                <a href="#">Tteokbboki</a>
+                <a href="#">Udon</a>
+                <a href="#">jjajangmyeon</a>
+            </div>
+
+            <div>
+                <p class="text-[#3a434d] font-[20px] uppercase">Follow Us</p>
+                <i class="ri-twitter-x-fill text-2xl"></i>
+                <i class="ri-linkedin-box-fill text-2xl"></i>
+                <i class="ri-instagram-fill text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="mt-32 flex justify-between">
+            <div class="copyright">
+                <p class="text-[16px]">&copy; Lawson. All Right Reserved.</p>
+            </div>
+
+            <div class="flex gap-[30px]">
+                <p>Terms of Service | Privacy Policy</p>
+            </div>
+
+        </div>
+      </footer>
+    <!-- end footer -->
+
+
+
+    <!-- SCRIPT -->
+    <!-- swiper -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- main -->
+    <script src="main.js"></script>
+    <!-- scroll reveral -->
+    <script src="scrollreveal.min.js"></script>
+</body>
+</html>
